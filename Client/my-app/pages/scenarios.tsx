@@ -1,3 +1,5 @@
+import ResponsiveAppBar from "@/components/ResponsiveAppBar";
+
 function Scenarios() {
         // const res = await fetch('http://localhost:8000/scenarios');
         // // const data = await res.json();
@@ -5,6 +7,7 @@ function Scenarios() {
 
     return (
         <div>
+            <ResponsiveAppBar></ResponsiveAppBar>
             <h1>Scenarios Page</h1>
             <p>This is the scenarios page.</p>
             {/*<p>This is the data: {data}</p>*/}

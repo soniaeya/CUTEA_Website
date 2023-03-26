@@ -1,10 +1,13 @@
-import Index from '../components/Index';
 import ResponsiveAppBar from "@/components/ResponsiveAppBar";
+import React from 'react';
 
-export default function Home() {
+const Users = () => {
     return (
         <div>
             <ResponsiveAppBar></ResponsiveAppBar>
+
         </div>
     );
-}
+};
+
+export default Users;
