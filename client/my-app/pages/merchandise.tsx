@@ -7,7 +7,9 @@ export default function Merchandise() {
             <ResponsiveAppBar></ResponsiveAppBar>
         <Container style={{ marginTop: '100px' }} maxWidth="lg">
         <h1>Merchandise</h1>
-        <p></p>
+        <p>
+            More to come!
+        </p>
     </Container>
 
     </div>

@@ -11,10 +11,6 @@ export default function Join() {
             <h1>Join Us</h1>
             <p>
                 Subscribe to our mailing list to have keep up to date with club activities!
-
-
-
-
             </p>
             <MailingListForm></MailingListForm>
         </Container>
