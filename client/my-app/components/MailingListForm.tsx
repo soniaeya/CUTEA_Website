@@ -24,6 +24,7 @@ export default function MailingListForm() {
             .catch((error) => {
                 console.log(error); // Logs any errors that occur during the post request
             });
+        return alert("You have successfully registered to the CUTEA mailing list!");
     }
     const handleChange = (event) => {
         setFormData({

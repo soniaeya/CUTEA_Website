@@ -1,64 +1,64 @@
 import Container from "@mui/material/Container";
+import { InstagramEmbed } from 'react-social-media-embed';
+import Button from "@mui/material/Button";
+import {Modal} from "@mui/material";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import React from "react"
+import TeamPic from "../public/Team Picture.png"
+import Image from "next/image"
 
+const style = {
+    position: 'absolute' as 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 600,
+    bgcolor: 'background.paper',
+    border: '2px solid #000',
+    boxShadow: 24,
+    p: 4,
+    mb: 2,
+    display: "flex",
+    flexDirection: "column",
+    height: 800,
+    overflowY: "auto",
+    overflowX: "none",
+
+};
 export default function EventList() {
-
+    const [open, setOpen] = React.useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
     return (<div>
-                <Container style={{maxHeight: 500, overflow: 'auto', border: "groove"}}>
-                    Events
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim maxime obcaecati rem tempore voluptatibus. Doloremque ea excepturi illo magnam quisquam similique. Aliquid consequatur expedita laboriosam magni nemo, nostrum quis Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam debitis error non ratione! Consequatur debitis enim ex harum neque quasi quia sunt, totam voluptates! Asperiores facere ipsum sin
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto blanditiis cumque dolor dolore doloribus earum eius expedita iure labore magnam nam nesciunt quis sed similique ut vero, voluptatem voluptates!
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae cumque doloribus eum exercitationem in labore molestias nemo, nesciunt nihil omnis optio porro quae quas recusandae totam, veritatis. Maxime, omnis.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolorum explicabo natus obcaecati quibusdam, quis ullam vel. Corporis delectus distinctio dolorem eaque iure, iusto soluta! Aspernatur culpa nisi odit quia.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At deleniti dignissimos dolorem dolores et id incidunt nam, odio omnis quas quibusdam quis recusandae rem voluptates voluptatibus! Ab accusamus itaque sit.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto beatae earum, eos facilis minus modi quos repellendus sapiente totam vitae? Harum impedit in labore minima quod recusandae repudiandae totam, voluptatum.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam aut commodi corporis distinctio doloribus, dolorum ea enim exercitationem, inventore maxime minus nulla perferendis quas ratione recusandae reprehenderit repudiandae sunt?
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem dolore ducimus est eum explicabo harum, ipsam maxime molestias non nostrum odio omnis pariatur quia reiciendis tempore veniam voluptate voluptatem.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim maxime obcaecati rem tempore voluptatibus. Doloremque ea excepturi illo magnam quisquam similique. Aliquid consequatur expedita laboriosam magni nemo, nostrum quis Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam debitis error non ratione! Consequatur debitis enim ex harum neque quasi quia sunt, totam voluptates! Asperiores facere ipsum sin
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto blanditiis cumque dolor dolore doloribus earum eius expedita iure labore magnam nam nesciunt quis sed similique ut vero, voluptatem voluptates!
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae cumque doloribus eum exercitationem in labore molestias nemo, nesciunt nihil omnis optio porro quae quas recusandae totam, veritatis. Maxime, omnis.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolorum explicabo natus obcaecati quibusdam, quis ullam vel. Corporis delectus distinctio dolorem eaque iure, iusto soluta! Aspernatur culpa nisi odit quia.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At deleniti dignissimos dolorem dolores et id incidunt nam, odio omnis quas quibusdam quis recusandae rem voluptates voluptatibus! Ab accusamus itaque sit.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto beatae earum, eos facilis minus modi quos repellendus sapiente totam vitae? Harum impedit in labore minima quod recusandae repudiandae totam, voluptatum.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam aut commodi corporis distinctio doloribus, dolorum ea enim exercitationem, inventore maxime minus nulla perferendis quas ratione recusandae reprehenderit repudiandae sunt?
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem dolore ducimus est eum explicabo harum, ipsam maxime molestias non nostrum odio omnis pariatur quia reiciendis tempore veniam voluptate voluptatem.
 
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim maxime obcaecati rem tempore voluptatibus. Doloremque ea excepturi illo magnam quisquam similique. Aliquid consequatur expedita laboriosam magni nemo, nostrum quis Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam debitis error non ratione! Consequatur debitis enim ex harum neque quasi quia sunt, totam voluptates! Asperiores facere ipsum sin
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto blanditiis cumque dolor dolore doloribus earum eius expedita iure labore magnam nam nesciunt quis sed similique ut vero, voluptatem voluptates!
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae cumque doloribus eum exercitationem in labore molestias nemo, nesciunt nihil omnis optio porro quae quas recusandae totam, veritatis. Maxime, omnis.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolorum explicabo natus obcaecati quibusdam, quis ullam vel. Corporis delectus distinctio dolorem eaque iure, iusto soluta! Aspernatur culpa nisi odit quia.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At deleniti dignissimos dolorem dolores et id incidunt nam, odio omnis quas quibusdam quis recusandae rem voluptates voluptatibus! Ab accusamus itaque sit.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto beatae earum, eos facilis minus modi quos repellendus sapiente totam vitae? Harum impedit in labore minima quod recusandae repudiandae totam, voluptatum.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam aut commodi corporis distinctio doloribus, dolorum ea enim exercitationem, inventore maxime minus nulla perferendis quas ratione recusandae reprehenderit repudiandae sunt?
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem dolore ducimus est eum explicabo harum, ipsam maxime molestias non nostrum odio omnis pariatur quia reiciendis tempore veniam voluptate voluptatem.
+            <Image width={400} height={400} src={TeamPic} onClick={handleOpen} alt="t"></Image>
+            <Modal
+                open={open}
+                onClose={handleClose}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+            >
+                <Box sx={style} >
+                    <Typography id="modal-modal-title" variant="h6" component="h2">
+                        Past CUTEA Events
+                    </Typography>
+                    <Typography id="modal-modal-description" sx={{ mt: 2 }} >
+                        <div>
+                            <InstagramEmbed url="https://www.instagram.com/p/CqTezZVuTQC/" width={600} />
+                            <InstagramEmbed url="https://www.instagram.com/p/CqDh4_DuiKZ/" width={600} />
+                            <InstagramEmbed url="https://www.instagram.com/p/CoxvN3AuUFs/" width={600} />
+                            <InstagramEmbed url="https://www.instagram.com/p/CotdX43uJtv/" width={600} />
+                        </div>
+                    </Typography>
+                </Box>
+            </Modal>
 
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim maxime obcaecati rem tempore voluptatibus. Doloremque ea excepturi illo magnam quisquam similique. Aliquid consequatur expedita laboriosam magni nemo, nostrum quis Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam debitis error non ratione! Consequatur debitis enim ex harum neque quasi quia sunt, totam voluptates! Asperiores facere ipsum sin
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto blanditiis cumque dolor dolore doloribus earum eius expedita iure labore magnam nam nesciunt quis sed similique ut vero, voluptatem voluptates!
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae cumque doloribus eum exercitationem in labore molestias nemo, nesciunt nihil omnis optio porro quae quas recusandae totam, veritatis. Maxime, omnis.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolorum explicabo natus obcaecati quibusdam, quis ullam vel. Corporis delectus distinctio dolorem eaque iure, iusto soluta! Aspernatur culpa nisi odit quia.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At deleniti dignissimos dolorem dolores et id incidunt nam, odio omnis quas quibusdam quis recusandae rem voluptates voluptatibus! Ab accusamus itaque sit.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto beatae earum, eos facilis minus modi quos repellendus sapiente totam vitae? Harum impedit in labore minima quod recusandae repudiandae totam, voluptatum.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam aut commodi corporis distinctio doloribus, dolorum ea enim exercitationem, inventore maxime minus nulla perferendis quas ratione recusandae reprehenderit repudiandae sunt?
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem dolore ducimus est eum explicabo harum, ipsam maxime molestias non nostrum odio omnis pariatur quia reiciendis tempore veniam voluptate voluptatem.
 
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim maxime obcaecati rem tempore voluptatibus. Doloremque ea excepturi illo magnam quisquam similique. Aliquid consequatur expedita laboriosam magni nemo, nostrum quis Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam debitis error non ratione! Consequatur debitis enim ex harum neque quasi quia sunt, totam voluptates! Asperiores facere ipsum sin
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto blanditiis cumque dolor dolore doloribus earum eius expedita iure labore magnam nam nesciunt quis sed similique ut vero, voluptatem voluptates!
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae cumque doloribus eum exercitationem in labore molestias nemo, nesciunt nihil omnis optio porro quae quas recusandae totam, veritatis. Maxime, omnis.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolorum explicabo natus obcaecati quibusdam, quis ullam vel. Corporis delectus distinctio dolorem eaque iure, iusto soluta! Aspernatur culpa nisi odit quia.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At deleniti dignissimos dolorem dolores et id incidunt nam, odio omnis quas quibusdam quis recusandae rem voluptates voluptatibus! Ab accusamus itaque sit.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto beatae earum, eos facilis minus modi quos repellendus sapiente totam vitae? Harum impedit in labore minima quod recusandae repudiandae totam, voluptatum.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam aut commodi corporis distinctio doloribus, dolorum ea enim exercitationem, inventore maxime minus nulla perferendis quas ratione recusandae reprehenderit repudiandae sunt?
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem dolore ducimus est eum explicabo harum, ipsam maxime molestias non nostrum odio omnis pariatur quia reiciendis tempore veniam voluptate voluptatem.
 
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim maxime obcaecati rem tempore voluptatibus. Doloremque ea excepturi illo magnam quisquam similique. Aliquid consequatur expedita laboriosam magni nemo, nostrum quis Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam debitis error non ratione! Consequatur debitis enim ex harum neque quasi quia sunt, totam voluptates! Asperiores facere ipsum sin
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto blanditiis cumque dolor dolore doloribus earum eius expedita iure labore magnam nam nesciunt quis sed similique ut vero, voluptatem voluptates!
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae cumque doloribus eum exercitationem in labore molestias nemo, nesciunt nihil omnis optio porro quae quas recusandae totam, veritatis. Maxime, omnis.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolorum explicabo natus obcaecati quibusdam, quis ullam vel. Corporis delectus distinctio dolorem eaque iure, iusto soluta! Aspernatur culpa nisi odit quia.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At deleniti dignissimos dolorem dolores et id incidunt nam, odio omnis quas quibusdam quis recusandae rem voluptates voluptatibus! Ab accusamus itaque sit.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto beatae earum, eos facilis minus modi quos repellendus sapiente totam vitae? Harum impedit in labore minima quod recusandae repudiandae totam, voluptatum.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam aut commodi corporis distinctio doloribus, dolorum ea enim exercitationem, inventore maxime minus nulla perferendis quas ratione recusandae reprehenderit repudiandae sunt?
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem dolore ducimus est eum explicabo harum, ipsam maxime molestias non nostrum odio omnis pariatur quia reiciendis tempore veniam voluptate voluptatem.
 
-                </Container>
+            {/*<Container style={{maxHeight: 500, overflow: 'auto', border: "groove"}}>*/}
+            {/*    </Container>*/}
         </div>
     );
 }
