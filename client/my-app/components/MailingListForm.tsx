@@ -2,12 +2,35 @@
 import { useForm } from 'react-hook-form';
 import {TextField} from "@mui/material";
 import MailingListConfirmation from "./MailingListConfirmation"
-
-import React from 'react';
+import axios from 'axios';
+import React, {useState} from 'react';
 import Button from "@mui/material/Button";
 
+
+
 export default function MailingListForm() {
-    const { register, handleSubmit, formState: { errors } } = useForm();
+
+    const [formData, setFormData] = useState({
+        name: '',
+        email: ''
+    });
+
+    function handleSubmit(event) {
+        event.preventDefault(); // Prevents the form from submitting via the browser
+        axios.post('http://127.0.0.1:8000/api/user/', formData)
+            .then((response) => {
+                console.log(response.data); // Logs the response from the server
+            })
+            .catch((error) => {
+                console.log(error); // Logs any errors that occur during the post request
+            });
+    }
+    const handleChange = (event) => {
+        setFormData({
+            ...formData,
+            [event.target.name]: event.target.value
+        });
+    };
 
 
     const onSubmit = () => {
@@ -16,16 +39,14 @@ export default function MailingListForm() {
 
     return (
         <div>
-
-            <input type="text" placeholder="First name" {...register("First name", {required: true, maxLength: 80})} />
-            <br/><br/>
-            <input type="text" placeholder="Last name" {...register("Last name", {required: true, maxLength: 100})} />
-            <br/><br/>
-            <input type="text" placeholder="Email" {...register("Email", {required: true, pattern: /^\S+@\S+$/i})} />
-            <br/><br/>
-            <input type="tel" placeholder="Mobile number" {...register("Mobile number", {required: true, minLength: 6, maxLength: 12})} />
-            <br/><br/>
-            <button onClick={MailingListConfirmation}>Submit</button>
+            <form onSubmit={handleSubmit}>
+                <input value={formData.name} name = "name" type="text" placeholder="Name" onChange={handleChange}/>
+                <br/><br/>
+                <input value={formData.email} name = "email" type="text" placeholder="Email" onChange={handleChange}/>
+                <br/><br/>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="data-container"></div>
         </div>
     );
 }

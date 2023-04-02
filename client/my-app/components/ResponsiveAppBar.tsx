@@ -31,14 +31,14 @@ export default function ResponsiveAppBar() {
     return (
       <div>
 
-          <AppBar position = "absolute" style = {{background: "#808000"}}>
+          <AppBar position = "absolute" style = {{background: "#8FBC8F"}}>
 
               <nav>
                   <ul>
                       {navItems.map((item) => (
                           <Button variant="text" color="primary" key={item.path}>
                               <Link legacyBehavior href={item.path}>
-                                  <a style={{ color: '#EEE8AA', textDecoration: 'none' }}>{item.name}</a>
+                                  <a style={{ color: '#FFFFFF', textDecoration: 'none' }}>{item.name}</a>
                               </Link>
                           </Button>
                       ))}
