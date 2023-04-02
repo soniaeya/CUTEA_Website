@@ -3,10 +3,15 @@ This project consists of making a website to present the Concordia University Te
 
 🧑‍🌾 FARM Stack (FastAPI + React + MongoDB)
 
-👁️Vision & Functionalities
+👁️ Vision & Functionalities
   - Mailing service for user updates
   - Custom popups
   - Locomotive Scroll
+  
+👣  Next Steps
+  - Styled Loader
+  - Word styling/animation
+  - Popup for embedded insta
 
 Additional Links:
 
