@@ -5,13 +5,13 @@ This project consists of making a website to present the Concordia University Te
 
 👁️ Vision & Functionalities
   - Mailing service for user updates
-  - Custom popups
-  - Locomotive Scroll
   
 👣  Next Steps
   - Styled Loader
   - Word styling/animation
   - Popup for embedded insta
+  - Custom popups
+  - Locomotive Scroll
 
 Additional Links:
 
