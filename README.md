@@ -5,6 +5,7 @@ This project consists of making a website to present the Concordia University Te
 
 👁️Vision & Functionalities
   - Mailing service for user updates
+  - Locomotive Scroll
 
 Additional Links:
 
