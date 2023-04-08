@@ -9,7 +9,6 @@ import Box from "@mui/material/Box";
 import { sizing } from '@mui/system';
 import styled from "styled-components";
 const Create = () => {
-    const imageUrl = "../public/green-tiles.jpg";
 
     return (
         // <div  style={{ backgroundImage: "url(${/imageUrl})"}}>
@@ -21,7 +20,7 @@ const Create = () => {
         //     {/*</Container>*/}
         // </div>
         <StyledBox>
-            <h1 style={{textAlign: "center", fontSize: 120}}>Create a Tea Club</h1>
+            <div style={{backgroundColor: "NavajoWhite", textAlign: "center", fontSize: 120}}>Create a Tea Club</div>
         </StyledBox>
     );
 };
@@ -31,10 +30,10 @@ const StyledBox = styled(Box)`
   width:100vw;
   left: 0;
   top: 0;
-  position: absolute;
+  position: relative;
   background-repeat: repeat;
   background-image: url(${myImage.src});
-  color: #423928;
+  color: SaddleBrown;
 `
 
 

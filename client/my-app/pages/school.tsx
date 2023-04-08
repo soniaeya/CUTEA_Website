@@ -4,27 +4,42 @@ import {Container} from "@mui/material";
 import pink_tea from "../public/pink_tea.jpg"
 
 import Image from "next/image";
+import styled from "styled-components";
+import Box from "@mui/material/Box";
+import myImage from "@/public/multicored-tiles.jpg";
 const School = () => {
     return (
-        <div>
-            <ResponsiveAppBar></ResponsiveAppBar>
-            <Container style={{ marginTop: '100px', height: 700}} maxWidth="lg">
-                <h1>School of Tea</h1>
-                <Image width={200} height={200} src={pink_tea} alt="sakao"></Image>
-                <h2 style={{textAlign: "center"}}>History and culture of tea</h2>
+
+        <StyledBox>
+            <div sx={{top: 0}} style={{backgroundColor: "#fcf0de", textAlign: "center", fontSize: 120}}>School of Tea</div>
+            <Container style={{marginTop: '50px', height: 500, backgroundColor: "#fcf0de", padding: 40, position: "relative"}} maxWidth="lg">
+                <div style={{fontSize: 30, textAlign: "center"}}>History and culture of tea</div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A facilis in inventore magnam quae qui, quisquam voluptatum. Amet dolor doloribus est, id libero quasi, ratione, recusandae repudiandae sit unde veniam.</p>
-                <h2 style={{textAlign: "center"}}>Tea Sommelier</h2>
+                <div style={{fontSize: 30, textAlign: "center"}}>Tea Sommelier</div>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A facilis in inventore magnam quae qui, quisquam voluptatum. Amet dolor doloribus est, id libero quasi, ratione, recusandae repudiandae sit unde veniam.</p>
-                <h2 style={{textAlign: "center"}}>Tea Manufacturing</h2>
+                <div style={{fontSize: 30, textAlign: "center"}}>Tea Manufacturing</div>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consectetur fugiat ipsa ipsam minus nam praesentium sequi tempore veritatis voluptatum? Debitis eaque in iure laboriosam optio provident sed sequi, similique?Lorem ipsum dolor sit amet, consectetur adipisicing elit. A facilis in inventore magnam quae qui, quisquam voluptatum. Amet dolor doloribus est, id libero quasi, ratione, recusandae repudiandae sit unde veniam.</p>
-                <h2 style={{textAlign: "center"}}>Health benefits</h2>
+                <div style={{fontSize: 30, textAlign: "center"}}>Health benefits</div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi aut consectetur consequuntur, deserunt dignissimos dolor eveniet id iste molestias natus necessitatibus nesciunt nostrum pariatur repellat repellendus similique solut</p>
             </Container>
-            
-        </div>
+        </StyledBox>
+
+
     );
+
 };
+
+const StyledBox = styled(Box)`
+  height:100vh;
+  width:100vw;
+  left: 0px;
+  top: 0;
+  position: relative;
+  background-repeat: revert;
+  background-image: url(${myImage.src});
+  z-index: 0;
+`
 
 export default School;

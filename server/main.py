@@ -1,10 +1,7 @@
-#  @bekbrace
-#  FARMSTACK Tutorial - Sunday 13.06.2021
-
+from selenium import webdriver
 from fastapi import FastAPI, HTTPException
-
 from model import User
-
+import os
 from database import (
     fetch_one_user,
     fetch_all_users,
@@ -12,8 +9,6 @@ from database import (
     update_user,
     remove_user,
 )
-
-# an HTTP-specific exception class  to generate exception information
 
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -23,8 +18,9 @@ origins = [
     "http://localhost:3000",
 ]
 
-# what is a middleware?
-# software that acts as a bridge between an operating system or database and applications, especially on a network.
+#  Selenium
+os.environ['PATH'] += r"C:/Users/sonia/Downloads/chromedriver_win32"
+driver = webdriver.Chrome()
 
 app.add_middleware(
     CORSMiddleware,
