@@ -22,10 +22,13 @@ export default function ResponsiveAppBar() {
     const navItems = [
         { name: 'Home', path: '/' },
         { name: 'About', path: '/about' },
-        { name: 'Contact', path: '/contact' },
-        { name: 'Merchandise', path: '/merchandise' },
-        { name: 'Events', path: '/events' },
-        { name: 'Join Us', path: '/join' },
+        { name: 'School of Tea', path: '/school' },
+        { name: 'FAQ', path: '/faq' },
+        { name: 'Events & Activities', path: '/events' },
+        { name: 'Create a Tea Club', path: '/create' },
+        { name: 'Products', path: '/products' },
+        { name: 'Join our team!', path: '/join' },
+        { name: 'Contact Us', path: '/contact' },
     ];
 
     return (

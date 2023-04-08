@@ -6,7 +6,7 @@ export default function Events() {
     return <div>
             <ResponsiveAppBar></ResponsiveAppBar>
         <Container style={{ marginTop: '100px' }} maxWidth="lg">
-        <h1>Events</h1>
+        <h1 style={{textAlign: "center"}}>Previous Events</h1>
             <EventList></EventList>
     </Container>
 

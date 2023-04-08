@@ -7,6 +7,7 @@ import Typography from "@mui/material/Typography";
 import React from "react"
 import TeamPic from "../public/Team Picture.png"
 import Image from "next/image"
+import {motion} from "framer-motion"
 
 const style = {
     position: 'absolute' as 'absolute',
@@ -23,16 +24,28 @@ const style = {
     flexDirection: "column",
     height: 800,
     overflowY: "auto",
-    overflowX: "none",
-
+    overflowX: "hidden",
+    msOverflowY: "none",
 };
 export default function EventList() {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
     return (<div>
+            <motion.div
+                style={{
+                    width: 400,
+                    height: 400,
+                }}
+                whileHover={{
+                    backgroundColor: "#000",
+                    boxShadow: "30px 30px 0 rgba(0, 0, 0, 0.2)",
+                    position: "fixed",
 
-            <Image width={400} height={400} src={TeamPic} onClick={handleOpen} alt="t"></Image>
+                }}
+            >
+                <Image width={400} height={400} src={TeamPic} onClick={handleOpen} alt="t"></Image>
+            </motion.div>
             <Modal
                 open={open}
                 onClose={handleClose}

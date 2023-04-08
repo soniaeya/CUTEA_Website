@@ -9,7 +9,7 @@ export default function Join() {
         <ResponsiveAppBar></ResponsiveAppBar>
         <Container style={{ marginTop: '100px' }} maxWidth="lg">
             <h1>Join Us</h1>
-            <p>
+            <p >
                 Subscribe to our mailing list to have keep up to date with club activities!
             </p>
             <MailingListForm></MailingListForm>
