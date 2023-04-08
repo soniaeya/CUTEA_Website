@@ -13,6 +13,7 @@ import GreenTiles from "../public/green-tiles.jpg"
 import CardMedia from '@mui/material/CardMedia';
 import TitleBanner from "../components/TitleBanner"
 import Background from "@/components/Background";
+import Faq from "@/pages/faq";
 
 export default function Home() {
 
@@ -31,6 +32,8 @@ export default function Home() {
             <TitleBanner title="About"/>
             <School></School>
             <Create></Create>
+            <Faq></Faq>
+
 
         </>
     )

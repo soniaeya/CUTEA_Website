@@ -1,19 +1,20 @@
 import React from 'react';
 import styled from "styled-components";
 
-function TitleBanner ({title}){
+function TitleBanner ({title, bckcolor, fontColor}){
 
-    return <Banner> {title} </Banner>
+    return <Banner bckcolor={bckcolor} fontColor={fontColor}> {title} </Banner>
 
 }
 const Banner = styled.div`
-  background-color: NavajoWhite;
+  background-color: ${props => props.bckcolor};
   text-align: center;
   font-size: 120px;
   position: relative;
   width: 100vw;
   height: 130px;
   left: 0px;
+  color: ${props => props.fontColor};
 
 `
 
