@@ -9,7 +9,7 @@ This project consists of making a website to present the Concordia University Te
 👣  Next Steps
   - Styled Loader
   - Word styling/animation
-  - Popup for embedded insta
+  - Popup for embedded insta 
   - Custom popups
   - Locomotive Scroll
 
