@@ -9,7 +9,7 @@ import TitleBanner from "@/components/TitleBanner";
 const Faq = () => {
     return (
         <>
-        <TitleBanner title={"FAQ"} bckcolor={"#f2e7e1"} fontColor={"#82bdae"}></TitleBanner>
+        <TitleBanner title={"FAQ"} bckcolor={"#bcd4c5"} fontColor={"#eb5f1e"}></TitleBanner>
         <Background backgroundImg={CutePattern}>
             {/*<ResponsiveAppBar></ResponsiveAppBar>*/}
             {/*<Container style={{ marginTop: '100px' }} maxWidth="lg">*/}
