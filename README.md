@@ -8,7 +8,7 @@ This project consists of making a website to present the Concordia University Te
   
 👣  Next Steps
   Containers
-  - Styled Text Container (round corners) 🎯
+  - Styled Text Container (round corners) 🎯 
   
   Features:
   - Popup for embedded insta ✅
