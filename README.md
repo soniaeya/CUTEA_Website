@@ -24,6 +24,6 @@ Additional Links:
 
 
 Legend:
-🎯: In progress
+🎯: In progress 
 ✅: Done
  
