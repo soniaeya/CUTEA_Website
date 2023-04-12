@@ -12,7 +12,7 @@ This project consists of making a website to present the Concordia University Te
   
   Features:
   - Popup for embedded insta ✅
-  - Word styling/animation 
+  - Word styling/animation
   - Scroll Animations (List animation) https://www.framer.com/motion/scroll-animations/
   - Custom popups
   - Styled Loader
