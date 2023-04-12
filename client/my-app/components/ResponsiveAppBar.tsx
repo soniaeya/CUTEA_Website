@@ -15,40 +15,51 @@ import AdbIcon from '@mui/icons-material/Adb';
 const pages = ['About', 'Contact Us', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 import Link from 'next/link';
+import CommonButton from "@/components/CommonButton";
+import styled from "styled-components";
 
 
 
 export default function ResponsiveAppBar() {
     const navItems = [
-        { name: 'Home', path: '/' },
         { name: 'About', path: '/about' },
-        { name: 'School of Tea', path: '/school' },
+        // { name: 'School of Tea', path: '/school' },
         { name: 'FAQ', path: '/faq' },
-        { name: 'Events & Activities', path: '/events' },
-        { name: 'Create a Tea Club', path: '/create' },
+        { name: 'Events', path: '/events' },
+        // { name: 'Create a Tea Club', path: '/create' },
         { name: 'Products', path: '/products' },
-        { name: 'Join our team!', path: '/join' },
-        { name: 'Contact Us', path: '/contact' },
+        { name: 'Join', path: '/join' },
+        // { name: 'Contact Us', path: '/contact' },
     ];
 
     return (
-      <div>
 
-          <AppBar position = "absolute" style = {{background: "#8FBC8F"}}>
+          <AppBar position = "absolute" style = {{background: "#FFFFFF", boxShadow: "none", alignItems: "center"}}>
 
               <nav>
                   <ul>
                       {navItems.map((item) => (
-                          <Button variant="text" color="primary" key={item.path}>
+                          <NavbarButton variant="text" color="primary" key={item.path}>
                               <Link legacyBehavior href={item.path}>
-                                  <a style={{ color: '#FFFFFF', textDecoration: 'none' }}>{item.name}</a>
+                                  <a style={{ color: '#696969', textDecoration: 'none' }}>{item.name}</a>
                               </Link>
-                          </Button>
+                          </NavbarButton>
                       ))}
+
                   </ul>
+
               </nav>
           </AppBar>
 
-      </div>
+
     );
 }
+
+const NavbarButton = styled(Button)`
+    font-size: 20px;
+
+`
+const ContactButton = styled(CommonButton)`
+
+
+`

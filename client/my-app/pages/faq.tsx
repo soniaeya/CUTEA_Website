@@ -9,8 +9,8 @@ import TitleBanner from "@/components/TitleBanner";
 const Faq = () => {
     return (
         <>
-        <TitleBanner title={"FAQ"} bckcolor={"#bcd4c5"} fontColor={"#eb5f1e"}></TitleBanner>
-        <Background backgroundImg={CutePattern}>
+        <TitleBanner title={"FAQ"} bckcolor={"#bad1c3"} fontColor={"#c94e14"}></TitleBanner>
+        <Background backgroundImg={CutePattern}></Background>
             {/*<ResponsiveAppBar></ResponsiveAppBar>*/}
             {/*<Container style={{ marginTop: '100px' }} maxWidth="lg">*/}
             {/*    <h1 style={{textAlign: "center"}}>FAQ</h1>*/}
@@ -18,7 +18,6 @@ const Faq = () => {
 
 
             {/*</Container>*/}
-        </Background>
         </>
     );
 };

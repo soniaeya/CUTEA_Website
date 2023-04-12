@@ -20,6 +20,7 @@ const StyledBox = styled(Box)`
   background-repeat: repeat;
   background-image: url(${props=> (props.img).src});
   color: SaddleBrown;
+  z-index: -1;
 `
 
 export default Background;
