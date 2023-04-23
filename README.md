@@ -7,7 +7,7 @@ This project consists of making a website to present the Concordia University Te
   - Mailing service for user updates
   
 👣  Next Steps
-  Containers
+  Containers 
   - Styled Text Container (round corners) 🎯 
   
   Features:
