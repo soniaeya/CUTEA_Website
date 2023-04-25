@@ -10,7 +10,7 @@ This project consists of making a website to present the Concordia University Te
   Containers 
   - Styled Text Container (round corners) 🎯 
   
-  Features:
+  Features: 
   - Popup for embedded insta ✅
   - Word styling/animation
   - Scroll Animations (List animation) https://www.framer.com/motion/scroll-animations/
