@@ -1,4 +1,4 @@
-# cutea-website🍵  
+# cutea-website🍵   
 This project consists of making a website to present the Concordia University Tea Enthusiast Association (CUTEA)!  
 
 🧑‍🌾 FARM Stack (FastAPI + React + MongoDB)
