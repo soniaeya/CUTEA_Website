@@ -22,7 +22,7 @@ Additional Links:
 
 🎨 Pinterest inspiration: https://www.pinterest.ca/sunsonn1/cutea-website-inspo/
 
-
+ 
 Legend: 
 🎯: In progress 
 ✅: Done
